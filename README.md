@@ -18,6 +18,13 @@ On Ubuntu, you can install the Boost library using the following command:
 sudo apt-get install libboost-all-dev
 ```
 
+On macOS, you can install Boost using Homebrew:
+```sh
+brew install boost
+```
+
+On Windows, you can download and install Boost from the official website: [Boost Downloads](https://www.boost.org/users/download/)
+
 ## Usage
 Include the `math_library.hpp` header file in your project to use the library functions.
 
@@ -56,8 +63,14 @@ int main() {
 ### Compilation
 To compile the library and the main program, use the following command:
 
+On Linux and macOS:
 ```sh
 g++ -o user_program user_code.cpp src/math_library.cpp -lboost_system -lboost_filesystem
+```
+
+On Windows (assuming Boost is installed in `C:\local\boost_1_75_0`):
+```sh
+g++ -o user_program user_code.cpp src/math_library.cpp -IC:\local\boost_1_75_0 -LC:\local\boost_1_75_0\stage\lib -lboost_system -lboost_filesystem
 ```
 
 ### Running the Program
