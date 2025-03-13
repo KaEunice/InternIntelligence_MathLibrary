@@ -1,4 +1,4 @@
-# Intel Intelligence Projects
+# MathLibrary
 
 ## Overview
 This project is a comprehensive math library implemented in C++. It includes a variety of mathematical functions, data structures, and statistical operations. The library is designed to be modular and easy to use, making it suitable for a wide range of applications.
